@@ -1,5 +1,6 @@
+#
 # (c) 2015, Peter Gaspar, pegaspar@cisco.com
-
+#
 # ------- begin of configuration settings ---------
 
 hostList=['bleh.cisco.com','dnspython.org','google.com','www.facebook.com']

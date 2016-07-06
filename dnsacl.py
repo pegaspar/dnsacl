@@ -1,6 +1,12 @@
 #
 # (c) 2015, Peter Gaspar, pegaspar@cisco.com
 #
+# 	Router must be configured for OnePK and certificate must be uploaded to the server
+#	running the script.
+#
+#	Feel free to modify or reuse the script in any way. I would just appreciate mentioning
+#	my name and email in your final product.
+#
 # ------- begin of configuration settings ---------
 
 hostList=['bleh.cisco.com','dnspython.org','google.com','www.facebook.com']
@@ -117,6 +123,7 @@ while True:
             ne.disconnect()
 
     #print the ACL to screen for visual check
+    
     # ------ START - remove this for production -------
     print("ip access-list extended "+aclName)
 
@@ -128,6 +135,7 @@ while True:
         print("no "+str(i+1))
         i+=1
     print(str(maxACLLines+1)+" permit any any")
+    
     # ------ END - remove this for production -------
     
     time.sleep(refreshInterval)
